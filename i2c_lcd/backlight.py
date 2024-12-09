@@ -21,7 +21,7 @@ class Backlight(object):
     RGB_ADDRESS_V5 = 0x30
 
     def __init__(self, i2c, address):
-        if not isinstance(i2c, (I2C, SoftI2C))
+        if not isinstance(i2c, (I2C, SoftI2C)):
             raise TypeError
 
         self.i2c = i2c
